@@ -70,7 +70,9 @@ To run the app locally:
    cd road-condition-prediction
 
 
-   ## Future Improvements
+
+
+## Future Improvements
 
 The following enhancements are planned for future versions of the Road Condition Prediction tool:
 
