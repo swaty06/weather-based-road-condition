@@ -13,12 +13,12 @@ df = pd.read_csv('weather_frankfrut.csv')
 
 # Function to classify road conditions based on temperature and precipitation
 def road_condition(tavg, prcp):
-    if tavg <= 0 and prcp > 0:
-        return 0  # Snow/Ice
-    elif prcp > 5:
-        return 1  # Wet
+    if tavg <= 0 or prcp == 0:
+        return 0
+    elif  tavg == 0  or prcp > 5:
+        return 1
     else:
-        return 2  # Dry
+        return 2
 
 # Apply road_condition function to create a new column in the dataset
 df['road_condition'] = [road_condition(avg, rain) for avg, rain in zip(df.tavg, df.prcp)]
