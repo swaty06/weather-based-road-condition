@@ -30,3 +30,5 @@ To run the app locally:
    git clone https://github.com/yourusername/road-condition-prediction.git
    cd road-condition-prediction
 
+
+
